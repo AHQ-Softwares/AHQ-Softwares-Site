@@ -11,10 +11,19 @@
     "*.mdx": "markdown"
   },
   "prettier.documentSelectors": ["**/*.astro"],
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/.hg/store/**": true,
+    "**/node_modules/**": true,
+    "**/node_modules_win/**": true
+  },
   "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "yaml.schemas": {
-    "./.vscode/astrowind/config-schema.json": "/src/config.yaml"
-  }
+    "./.vscode/AHQ Softwares/config-schema.json": "/src/config.yaml"
+  },
+  "editor.formatOnSave": true
 }
